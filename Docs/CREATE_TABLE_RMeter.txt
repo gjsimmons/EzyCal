@@ -1,0 +1,27 @@
+USE [FTSU1200]
+GO
+
+/****** Object:  Table [dbo].[RMeter]    Script Date: 03/24/2015 17:30:38 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[RMeter](
+	[RunID] [int] NOT NULL,
+	[PositionNo] [smallint] NOT NULL,
+	[Status] [smallint] NOT NULL,
+	[MeterName] [nvarchar](50) NOT NULL,
+	[OwnerNo] [nvarchar](50) NOT NULL,
+	[MSN] [nvarchar](50) NOT NULL,
+	[YearOfManufacture] [smallint] NOT NULL,
+	[LastApproval] [nvarchar](50) NOT NULL,
+	[ContractNo] [nvarchar](50) NOT NULL,
+	[ClientName] [nvarchar](50) NOT NULL,
+	[ClientNo] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+
